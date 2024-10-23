@@ -1,6 +1,7 @@
 import React from 'react';
 import {Box, Button, ButtonGroup} from "@mui/material";
 import Item from "./entities/Item";
+import './app/index.css'
 
 
 
@@ -15,10 +16,18 @@ function App() {
     setButtonsIsVisible(true)
   }
   return (
-      <Box>
-        {(progress>=0)?<Item setButtonsIsVisible={setButtonsIsVisible} setProgress={setProgress} progress={progress}/>:<Button onClick={start}>Start
+      <Box sx={{
+        paddingTop: "150px"
+      }}>
+        {(progress>=0)?<Item setButtonsIsVisible={setButtonsIsVisible} setProgress={setProgress} progress={progress}/>:
+            <Button  variant="contained" onClick={start}>Start
         </Button>}
-        {(buttonsIsVisible)&&<ButtonGroup variant="contained">
+        {(buttonsIsVisible)&&<ButtonGroup
+            sx={{
+              textAlign: "center",
+              margin: '0 auto'
+            }}
+            variant="text">
           <Button onClick={()=>setProgress(progress+1)}>Дальше</Button>
           <Button onClick={()=>setProgress(progress+1)}>Пропустить</Button>
         </ButtonGroup>}

@@ -54,6 +54,7 @@ function CheckboxComponent(props: { progress: number }) {
     }, [checkedData, correctAnswer, props.progress])
 
     return <Box>
+        <p>{data[props.progress].title}</p>
         <p>Необходимо выбрать несколько правильных вариантов</p>
         <FormGroup onChange={change}>
             {data[props.progress].answers!.map((answer) => {

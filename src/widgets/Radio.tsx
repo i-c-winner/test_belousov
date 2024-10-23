@@ -22,6 +22,7 @@ function RadioComponent(props: { progress: number }) {
 
 
     return <Box>
+        <p>{data[props.progress].title}</p>
         <p>Необходимо выбрать один правильный вариант</p>
         <RadioGroup
             onChange={change}

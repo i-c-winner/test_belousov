@@ -16,7 +16,11 @@ function TextAreaComponent(props: { progress: number }) {
         localStorage.setItem('textarea', JSON.stringify(newLocalStorage))
     }
 
-    return <Box>
+    return <Box sx={{
+        margin: '25px'
+    }}>
+        <p>{data[props.progress].title}?</p>
+        <p>Опишите своими словами</p>
         <Textarea onChange={change}/>
     </Box>
 

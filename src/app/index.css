@@ -1,0 +1,17 @@
+body {
+    margin: initial;
+
+}
+#root {
+    text-align: center;
+    background-color: #040303;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+.MuiRadio-root {
+    color: rgb(220, 24, 24)!important;
+}
+.MuiCheckbox-root {
+    color: rgb(220, 24, 24)!important;
+}

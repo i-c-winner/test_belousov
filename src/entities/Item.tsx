@@ -6,6 +6,7 @@ import {Box} from "@mui/material";
 import Radio from "../widgets/Radio";
 import TextArea from "../widgets/TextArea";
 import Checkbox from "../widgets/Checkbox";
+import Indicators from "../widgets/indicators";
 
 const data: IItem[]=getData()
 
@@ -22,7 +23,13 @@ function Item(props: {progress: number,
         textArea: <TextArea progress={props.progress}/>,
         checkbox: <Checkbox progress={props.progress}/>
     }
-    return <Box>
+    return <Box
+    sx={{
+        width: "50%",
+        margin: "0 auto",
+
+    }}>
+        <Indicators amount={data.length} current={props.progress}/>
         {(props.progress<data.length)?component[data[props.progress].type]:<Result
             setProgress= {props.setProgress}
             setButtonsIsVisible={props.setButtonsIsVisible}/>}
