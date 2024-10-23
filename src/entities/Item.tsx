@@ -1,4 +1,3 @@
-import {useEffect, useState} from "react";
 import getData from "../shared/functions/getData";
 import {IItem} from "../app/types";
 import Result from "./Result";

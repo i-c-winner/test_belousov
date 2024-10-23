@@ -1,5 +1,4 @@
 import {Stepper, StepIndicator, Step,} from "@mui/joy";
-import {Box} from "@mui/material";
 import "./index.css"
 
 function Indicators(props: { amount: number, current: number }) {

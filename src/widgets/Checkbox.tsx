@@ -3,7 +3,6 @@ import {IItem} from "../app/types";
 import {defineAnswer} from "../functoions/defineAnswer";
 import {FormControlLabel, FormGroup, Checkbox, Box} from "@mui/material";
 import {useEffect, useState} from "react";
-import {Simulate} from "react-dom/test-utils";
 
 const data: IItem[] = getData();
 
