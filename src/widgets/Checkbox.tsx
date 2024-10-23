@@ -62,7 +62,7 @@ function CheckboxComponent(props: { progress: number }) {
             })}
         </FormGroup>
     </Box>
-    return (<p>checkbox</p>)
+
 }
 
 export default CheckboxComponent;
